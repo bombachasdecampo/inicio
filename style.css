@@ -1,0 +1,34 @@
+/*resolution 360 x 545*/
+
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+
+:root{
+--header:8vh;
+--main:calc(100vh - var(--header));
+--headerFont: 'lazy';
+}
+
+@font-face{
+font-family: 'lazy';
+src: url('font/Lazy.otf');
+}
+
+html{
+font-family: var(--headerFont);
+
+}
+
+header{
+border-bottom: 2px solid black;
+font-size: clamp(1.4rem,6vw, 2.8rem);
+padding-bottom: 8px;
+padding-top: 8px;
+}
+
