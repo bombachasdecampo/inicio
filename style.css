@@ -12,12 +12,18 @@ box-sizing: border-box;
 :root{
 --header:8vh;
 --main:calc(100vh - var(--header));
---headerFont: 'lazy';
+--headerFont: 'romance';
 }
 
 @font-face{
 font-family: 'lazy';
 src: url('font/Lazy.otf');
+}
+
+
+@font-face{
+font-family: 'romance';
+src: url('font/Romance.ttf');
 }
 
 html{
@@ -27,8 +33,30 @@ font-family: var(--headerFont);
 
 header{
 border-bottom: 2px solid black;
-font-size: clamp(1.4rem,6vw, 2.8rem);
+font-size: clamp(1.1rem,2vw, 2.8rem);
 padding-bottom: 8px;
 padding-top: 8px;
 }
 
+section#prices{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+ul{
+list-style: none;
+}
+
+img{
+border-radius: 20px;
+width: clamp(300px,70vw,600px);
+height: clamp(200px, 50vh, 500px);
+}
+
+li{
+padding-top: 10px;
+padding-bottom: 10px;
+}
